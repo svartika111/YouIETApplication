@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">YouIET</string>
+    <string name="title_activity_about">About</string>
+    <string name="tab_text_1">UIET</string>
+    <string name="tab_text_2">LIBRARY</string>
+    <string name="tab_text_3">ADMISSIONS</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="libcontent">The library provides the students an   ease of access to a wide source of latest technological advances. Besides housing a   fairly large collection of books on engineering, management, technology, the library has   developed an excellent collection of famous   authors, journals and non-course related   material. There is a well managed collection of the own research and publications of the   institute.\nStudents also have access to A.C.Joshi Library, which, having a collection of over   670,000 books and 660 periodicals is one the   largest in the country. The University Library   is connected through an inflibnet network with all the departments on the campus   which allows them to avail the Library’s online  facilities.</string>
+    <string name="uietcontent">University Institute of Engineering and Technology (UIET) is an engineering and management institute of Panjab University, Chandigarh,India offering undergraduate (BE), postgraduate (Dual Degree BEMBA, M.Tech degree) as well as doctoral courses.
+        The institute is granted funds from the central government to improve its infrastructure and facilities. UIET has interactions and Memoranda of Understanding (MoUs) with industry and academia like Infosys (Campus Connect Program), IBM, IMTECH, and Bharti Group (Bharti Chair for research).
+        The institute has a memorandum signed with the University of Western Australia.</string>
+    <string name="admissioncontent">Applying for admission to any of the Undergraduate courses available in UIET involves the following:\n
+        Online registration at admission website\nOnline payment of a non-refundable registration fee, and filling the registration fee payment details
+Admissions is made on the basis of JEE (Main) -  All India Rank (AIR). There are three rounds of online counselling followed by one last SPOT round of online counselling. Only the registered candidates are  able to participate in these rounds of counselling.</string>
+    <string name="bpccontent">Officially founded in 2011, BPC is the 10th and the youngest UTECHNOS Committee of UIET, Panjab University. Around one-and-a-half years ago, some spirited young minds got together with a sole aim in mind, i.e. to create a Brand ‘UIET’ and they believe that BPC will be able to help UIET develop and build its name. BPC  help, encourage and coordinate student initiatives in UIET, Panjab University.</string>
+    <string name="content_edc">Entrepreneurship Development Cell(EDC) began with the idea that the conventional model
+        of problem solving in the world was simply not as effective as was thought earlier.
+        The world needed a better model. We needed a better way, not only to restore but also to replenish.
+        A model that is not only sustainable but also pivotal to growth and prosperity.\n At EDC,
+        Entrepreneurship is the most vital key towards reaching that better model. All great things take time.
+        Since their establishment, they have pursued towards creating a nurturing environment for budding entrepreneurs and
+        entrepreneurial-minds alike, conducting workshops, events, seminars, boot camps, interactive sessions, pitching sessions
+        and many more such endeavours that have proven to be stepping stones for many individuals and teams alike.</string>
+    <string name="magcontent">Magboard is the official Magazine Board of UIET. It is an experience, one which requires year long participation and enables its members to not just learn skills, but also put them into practice. One learns how to put their ideas forward in a manner which is concise and easily understandable, and how to operate in high pressure situations while working along people from various shades of life.</string>
+    <string name="content">DIG is a platform to provide experential learning to computer science enthusiasts and connect them with our industry partners.
+    They organize various technical events like Hacksprint and makethon. </string>
+    <string name="osmcontent"> Osmium - a group comprising Panjab University’s youngsters, who are passionate about theatre and are popularly known as “nautanki ke element’ on the campus.This theatre group includes budding engineers from University Institute of Engineering and Technology (UIET). Having won several prestigious theatre events at IIT Delhi, IIT Kharagpur, IIT Saharanpur, NIT, Kurukshetra, PEC and several other institutes, these students are known for writing scripts that have a social message.
+</string>
+    <string name="mitracontent">Mitra is an NGO based in UIET, Panjab University. Over the past few years, it has established a reputation by organizing fun activities and events with a twist — charitableness. The most recent example being, Funsani, an event organized by them just last week. The events take place over a two/three day stretch and involve the participation of dynamic youngsters. Mitra is one of a kind as it doesn’t only focus on the social cause, but the overall growth of the individuals involved in it. </string>
+    <string name="imagencontent">Imagen is the official photography club of uiet. It comprises of a team of enthusiatic photographers who are passionate about visual arts. They organize various
+    workshops throughout the year.</string>
+    <string name="rotractcontent">Rotaract Club of UIET, established initiated in Panjab University in 2007, sponsored by Rotary Club Chandigarh Central is one of the many rotaract clubs in RID 3080 (Zone 2). It’s a voluntary institute based NGO whose sole purpose is working for social cause and promoting fellowship.
+
+ RAC UIET provides an environment where the  zealous and enthusiastic club members come up with innovative ideas along with great execution .The work being done by Rotaract Club of UIET has had a great impact on improving areas of substandard quality  . Simplicity and understanding among the club members turns out to be the greatest strength of UIETIANS.We at RAC UIET aim at learning as an individual,growing  as a communuty and serving society as a whole as Together we grow,Together we develop..Together we serve!!! .
+</string>
+    <string name="tpccontent">Traiing And Placement Cell of UIET is responsible for the entire placement procedure in college. They Approach companies, Manage the placement
+procedure on the day of interviews and shortlist students according to results provided by companies.</string>
+    <string name="title_activity_welcomepage">welcomepage</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- Navigation Activity -->
+    <string name="nav_header_title">YouIET</string>
+    <string name="nav_header_subtitle">Welcomes You!</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <!--Contacts-->
+    <string name="l1">Hostel Queries\nNitika Bansal\nBlock-1 </string>
+    <string name="l2">CSE Co-ordinator\nSukhwinder Singh\nBlock-1 </string>
+    <string name="l3">Mechanical Co-ordinator\nHarmesh Kansal\nBlock-2 </string>
+    <string name="l4">Biotechnology Co-ordinator\nJaspreet Kaur\nBlock-1 </string>
+    <string name="l5">EEE Co-ordinator\nManoj Sharma\nBlock-1 </string>
+    <string name="l6">ECE Co-ordinator\nSharmelle Thangjam\nBlock-1 </string>
+    <string name="l7">IT Co-ordinator\nInderdeep Kaur\nBlock-1 </string>
+    <string name="l8">First Year Co-ordinator\nVinay Kanwar\nBlock-2 </string>
+    <string name="content_goonj">Entrepreneurship Development Cell(EDC) began with the idea that the conventional model
+        of problem solving in the world was simply not as effective as was thought earlier.
+        The world needed a better model. We needed a better way, not only to restore but also to replenish.
+        A model that is not only sustainable but also pivotal to growth and prosperity.\n At EDC,
+        Entrepreneurship is the most vital key towards reaching that better model. All great things take time.
+        Since their establishment, they have pursued towards creating a nurturing environment for budding entrepreneurs and
+        entrepreneurial-minds alike, conducting workshops, events, seminars, boot camps, interactive sessions, pitching sessions
+        and many more such endeavours that have proven to be stepping stones for many individuals and teams alike.</string>
+</resources>
+

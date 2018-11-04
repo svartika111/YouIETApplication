@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".library">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:id="@+id/lib1"
+        >
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/libtemp"
+            android:scaleX="2"
+            android:id="@+id/img2"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#2C3E50"
+    android:paddingTop="10dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:paddingLeft="10dp"
+            android:paddingRight="9dp"
+            android:layout_marginTop="14dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:text="LIBRARY"
+            android:scrollbars="vertical"
+            android:id="@+id/text_view3"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="fill_horizontal"
+
+             />
+</LinearLayout>
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="5dp">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:layout_marginTop="20dp"
+                android:gravity="fill_horizontal"
+                android:lineSpacingExtra="4sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="9dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="vertical"
+                android:text="@string/libcontent"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#5b5b5a"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:typeface="sans"
+                 />
+        </ScrollView>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

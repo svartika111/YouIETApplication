@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feewelcome"
+    android:background="#2C3E50"
+    >
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/fp2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_marginBottom="10dp"
+        android:text="Step2: Select the State as Chandigarh and Type of the Corporate/Institution as Educational Institution and click Go"
+        android:textSize="16dp" />
+
+</RelativeLayout>

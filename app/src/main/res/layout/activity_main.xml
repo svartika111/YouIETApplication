@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3E50">
+
+ <!--   <View
+        android:id="@+id/opacityFilter"
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:alpha="0.8"
+        android:background="@android:color/white"
+        android:visibility="visible"></View>
+-->
+   <android.support.v7.widget.CardView
+       xmlns:card_view="http://schemas.android.com/apk/res-auto"
+       android:layout_width="330dp"
+       android:layout_height="400dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="12dp"
+       app:cardCornerRadius="7dp"
+       android:layout_alignBottom="@id/textView"
+       app:cardElevation="20dp"
+       card_view:cardBackgroundColor="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:alpha="0.9"
+        android:background="#6b8c84"
+        android:onClick="Save"
+        android:text="submit"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnRetr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="13dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:onClick="NEXT"
+        android:text="NEXT"
+        android:textColor="#545459"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="390dp"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="167dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        card_view:cardBackgroundColor="@android:color/transparent" />
+    <EditText
+        android:id="@+id/semester"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="291dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColorHint="#ffffff"
+        android:ems="10"
+        android:hint="Enter Semester"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/branch"
+        android:layout_width="363dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="207dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColorHint="#ffffff"
+        android:ems="10"
+        android:hint="Enter Branch"
+        android:inputType="text"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="36dp"
+        android:text="Enter Details "
+        android:paddingBottom="15dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="#e1e1e7"
+        app:fontFamily="@font/alike_angular" />
+
+</RelativeLayout>

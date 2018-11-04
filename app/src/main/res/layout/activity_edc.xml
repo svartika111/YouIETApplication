@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".edc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:id="@+id/b1"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/udyami"
+            android:scaleType="fitXY"
+            android:id="@+id/img1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:paddingLeft="9dp"
+            android:paddingRight="8dp"
+            android:layout_marginTop="0dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:text="ENTREPRENEURSHIP AND DEVELOPMENT CELL"
+            android:scrollbars="vertical"
+            android:background="#2C3E50"
+            android:id="@+id/text_view2"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="fill_horizontal"
+            app:fontFamily="@font/alike_angular" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:cardBackgroundColor="@android:color/transparent">
+
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:layout_marginTop="10dp"
+            android:gravity="fill_horizontal"
+            android:lineSpacingExtra="4sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="9dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:scrollbars="vertical"
+            android:text="@string/content_edc"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#5b5b5a"
+            android:textSize="14dp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular" />
+        </android.support.v7.widget.CardView>
+</ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="CONNECT"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:typeface="sans"
+            android:textColor="#5b5b5a"
+            app:fontFamily="@font/alike_angular" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/insta"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="2dp"
+                android:background="@android:drawable/divider_horizontal_dim_dark"
+                android:scaleType="fitStart"
+                android:src="@drawable/instagramicon"
+                android:onClick="goToinsta"
+                android:linksClickable="true"
+                />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="79dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/facebookicon"
+                android:background="@android:drawable/divider_horizontal_dim_dark"
+                android:layout_marginTop="8dp"
+                android:id="@+id/fb"
+                android:onClick="goTofb"
+                android:linksClickable="true"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

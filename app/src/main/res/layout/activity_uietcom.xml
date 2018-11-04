@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uietcom"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                card_view:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_row_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/drawable_edc"
+                            android:clickable="true"
+                            style="@style/home_icon_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                style="@style/home_icon_image_view"
+                                android:layout_width="fill_parent"
+                                app:srcCompat="@drawable/edc"
+                                android:linksClickable="true"
+                                />
+
+                            <TextView
+                                style="@style/home_icon_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="EDC" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="35dp"
+                            android:background="@color/md_grey_100" />
+
+
+                        <LinearLayout
+                            android:id="@+id/drawable_bpc"
+                            style="@style/home_icon_ll"
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                style="@style/home_icon_image_view"
+                                android:layout_width="fill_parent"
+                                app:srcCompat="@drawable/bpc" />
+
+                            <TextView
+                                style="@style/home_icon_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="BPC" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:background="@color/md_grey_100" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_row_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear_row_1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/drawable_mag"
+                            style="@style/home_icon_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                style="@style/home_icon_image_view"
+                                android:layout_width="fill_parent"
+
+                                app:srcCompat="@drawable/mag" />
+
+                            <TextView
+                                style="@style/home_icon_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MAGBOARD" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="35dp"
+                            android:background="@color/md_grey_100" />
+
+                        <LinearLayout
+                            android:id="@+id/drawable_tpc"
+                            style="@style/home_icon_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                style="@style/home_icon_image_view"
+                                android:layout_width="fill_parent"
+                                app:srcCompat="@drawable/tpc" />
+
+                            <TextView
+                                style="@style/home_icon_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="TPC" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="35dp"
+                        android:background="@color/md_grey_100" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_row_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear_row_2"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/drawable_rotract"
+                            style="@style/home_icon_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                style="@style/home_icon_image_view"
+                                android:layout_width="fill_parent"
+                                app:srcCompat="@drawable/rotract" />
+
+                            <TextView
+                                style="@style/home_icon_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="ROTRACT UIET" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="35dp"
+                            android:background="@color/md_grey_100" />
+
+                        <LinearLayout
+                            android:id="@+id/drawable_osm"
+                            style="@style/home_icon_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                style="@style/home_icon_image_view"
+                                android:layout_width="fill_parent"
+                                app:srcCompat="@drawable/osmium" />
+
+                            <TextView
+                                style="@style/home_icon_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="OSMIUM" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginHorizontal="25dp"
+                        android:background="@color/md_grey_100" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_row_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear_row_3"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/drawable_dig"
+                            style="@style/home_icon_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                style="@style/home_icon_image_view"
+                                android:layout_width="fill_parent"
+
+                                app:srcCompat="@drawable/dig" />
+
+                            <TextView
+                                style="@style/home_icon_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="DIG" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="35dp"
+                            android:background="@color/md_grey_100" />
+
+                        <LinearLayout
+                            android:id="@+id/drawable_mitra"
+                            style="@style/home_icon_ll"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                style="@style/home_icon_image_view"
+                                android:layout_width="fill_parent"
+                                app:srcCompat="@drawable/mitra" />
+
+                            <TextView
+                                style="@style/home_icon_text_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MITRA" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".committees"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".committees">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:id="@+id/uiet1"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/admission"
+            android:scaleType="fitXY"
+            android:id="@+id/img1"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2C3E50"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:paddingLeft="10dp"
+            android:paddingRight="9dp"
+            android:layout_marginTop="14dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:text="ADMISSIONS"
+            android:scrollbars="vertical"
+            android:id="@+id/text_view2"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#ffffff"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:gravity="fill_horizontal"
+            />
+    </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="5dp">
+
+
+                <TextView
+                    android:id="@+id/text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_marginTop="20dp"
+                    android:gravity="fill_horizontal"
+                    android:lineSpacingExtra="4sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="9dp"
+                    android:scrollbars="vertical"
+                    android:text="@string/admissioncontent"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textColor="#5b5b5a"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:typeface="sans"
+                    />
+        </android.support.v7.widget.CardView>
+        </ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Helpline Numbers"
+            android:layout_marginLeft="10dp"
+            android:textSize="14dp"
+            android:textColor="#5b5b5a"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="20dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/phone2"
+                android:layout_marginLeft="20dp"
+                />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:text="- 6239645463, 6239613191"
+    android:textSize="14dp"
+    android:textColor="#5b5b5a"
+    />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
+</ScrollView>

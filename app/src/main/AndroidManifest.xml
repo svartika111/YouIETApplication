@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vartikasharma.youiet">
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Welcome" />
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".edc" />
+        <activity android:name=".magboard" />
+        <activity android:name=".imagen" />
+        <activity android:name=".rotract" />
+        <activity android:name=".mitra" />
+        <activity android:name=".osmium" />
+        <activity android:name=".tpc" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".dig" />
+        <activity android:name=".uietcom" />
+        <activity
+            android:name=".firstpage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splashscreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".contacts" />
+        <activity android:name=".complaintbox" />
+        <activity android:name=".ImportantForms" />
+        <activity android:name=".result" />
+        <activity android:name=".bpc1" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".attendacechecker" />
+        <activity android:name=".MajorEvents" />
+        <activity android:name=".feepage" />
+        <activity android:name=".feewelcome" />
+        <activity android:name=".aboutdevelopers" />
+        <activity android:name=".timetable" />
+        <activity android:name=".UpdateMon" />
+        <activity android:name=".UpdateTues" />
+        <activity android:name=".UpdateWed" />
+        <activity android:name=".UpdateThurs" />
+        <activity android:name=".UpdateFri" />
+        <activity android:name=".eventspage"></activity>
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".CommonFragment1"></activity>
+
+
+    </application>
+
+</manifest>

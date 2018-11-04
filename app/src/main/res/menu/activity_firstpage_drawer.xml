@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/timetable"
+            android:iconTint="#27ae60"
+            android:title="Time Table" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact1"
+            android:iconTint="#27ae60"
+            android:title="Contacts" />
+
+        <item
+            android:id="@+id/nav_form"
+            android:icon="@drawable/formicon"
+            android:iconTint="#27ae60"
+            android:title="Forms" />
+        <item
+            android:id="@+id/nav_majorevents"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:iconTint="#27ae60"
+            android:title="Major Events" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about1"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>

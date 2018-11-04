@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attendacechecker"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".attendacechecker"
+    android:background="#2C3E50"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+      android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:background="#e6edf1"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Subjects"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Present"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:text="Absent"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Total%"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="91dp"
+            android:layout_height="wrap_content">
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Subject 1"
+            android:id="@+id/sub1"
+            android:textColorHint="#ffffff"
+            android:textColor="#e6edf1"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseInteger"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseInteger"
+            android:text="+" />
+        <Button
+            android:id="@+id/decrease1"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegerabsent"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increase1"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegerabsent"
+            android:text="+" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/total1"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="91dp"
+            android:layout_height="wrap_content">
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Subject 2"
+            android:id="@+id/sub2"
+            android:textColorHint="#ffffff"
+            android:textColor="#e6edf1"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/decreasep1"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegerp1"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numberp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasep1"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegerp1"
+            android:text="+" />
+        <Button
+            android:id="@+id/decreasea1"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegera1"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numbera1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasea1"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegera1"
+            android:text="+" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/total2"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="91dp"
+            android:layout_height="wrap_content">
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Subject 3"
+            android:id="@+id/sub3"
+            android:textColorHint="#ffffff"
+            android:textColor="#e6edf1"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/decreasep2"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegerp2"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numberp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasep2"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegerp2"
+            android:text="+" />
+        <Button
+            android:id="@+id/decreasea2"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegera2"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numbera2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasea2"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegera2"
+            android:text="+" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/total3"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="91dp"
+            android:layout_height="wrap_content">
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Subject 4"
+            android:id="@+id/sub4"
+            android:textColorHint="#ffffff"
+            android:textColor="#e6edf1"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/decreasep3"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegerp3"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numberp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasep3"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegerp3"
+            android:text="+" />
+        <Button
+            android:id="@+id/decreasea3"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegera3"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numbera3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasea3"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegera3"
+            android:text="+" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/total4"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="91dp"
+            android:layout_height="wrap_content">
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Subject 5"
+            android:id="@+id/sub5"
+            android:textColorHint="#ffffff"
+            android:textColor="#e6edf1"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/decreasep4"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegerp4"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numberp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasep4"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegerp4"
+            android:text="+" />
+        <Button
+            android:id="@+id/decreasea4"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegera4"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numbera4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasea4"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegera4"
+            android:text="+" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/total5"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="91dp"
+            android:layout_height="wrap_content">
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Subject 6"
+            android:id="@+id/sub6"
+            android:textColorHint="#ffffff"
+            android:textColor="#e6edf1"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:typeface="sans"
+            app:fontFamily="@font/alike_angular"
+            />
+        </LinearLayout>
+        <Button
+            android:id="@+id/decreasep5"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegerp5"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numberp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasep5"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegerp5"
+            android:text="+" />
+        <Button
+            android:id="@+id/decreasea5"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="decreaseIntegera5"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/integer_numbera5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="#ffffff"
+            android:textSize="29dp"
+            android:textStyle="normal" />
+
+        <Button
+            android:id="@+id/increasea5"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:onClick="increaseIntegera5"
+            android:text="+" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/total6"
+            android:layout_marginLeft="20dp"
+            android:text="0"
+            android:layout_marginTop="4dp"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="normal"
+            />
+
+    </LinearLayout>
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="15dp"
+       android:layout_marginLeft="135dp"
+       android:onClick="saveresult"
+       android:text="Exit"
+       android:background="@android:drawable/dialog_holo_light_frame"
+
+       />
+
+</LinearLayout>
+</ScrollView>
